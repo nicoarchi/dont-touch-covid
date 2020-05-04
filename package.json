@@ -1,0 +1,21 @@
+{
+  "name": "dont-touch-covid",
+  "version": "1.0.0",
+  "description": "Website made using NodeJS and the Handtrack JS library to prevent the spread of coronavirus SARS-CoV-2 by avoiding touching your face while you are working.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "N. Architector",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "handtrackjs": "0.0.13",
+    "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}

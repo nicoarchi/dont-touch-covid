@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="covid, coronavirus, face, hands" />
+    <meta name="description"
+        content="Website made using NodeJS and the Handtrack JS library to prevent the spread of coronavirus SARS-CoV-2 by avoiding touching your face while you are working." />
+    <meta name="author" content="N. Archi, nicoarchitector@gmail.com">
+    <title>Don't Touch COVID19</title>
+    <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./index.css" />
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- https://fontawesome.com/license favicon.ico FONTAWESOME LICENSE -->
+    <!-- Project build on: Victor Dibia, HandTrack: A Library For Prototyping Real-time Hand TrackingInterfaces using Convolutional Neural Networks, https://github.com/victordibia/handtracking -->
+    <!-- Background image by Scott Graham at Unsplash @sctgrhm -->
+</head>
+
+<body>
+    <h2>DONT TOUCH</h2>
+    <p id="p-top">Prevent the spread of coronavirus SARS-CoV-2 by avoiding touching your face while you are working.</p>
+    <div class="container">
+        <video id="video" width="720" height="560" autoplay muted></video>
+        <audio src="./sound/nope-sound.mp3" id="audio"></audio>
+        <canvas id="canvas"></canvas>
+    </div>
+    <p id="p-bottom">Put your headphones on and STAY SAFE!&nbsp;&nbsp;
+        <a href="mailto:nicoarchitector@gmail.com">Contact me</a>
+        <button id="muteBtn" value="Play">Play</button>
+    </p>
+
+    <!-- SCRIPT HANDTRAK -->
+    <script src="https://cdn.jsdelivr.net/npm/handtrackjs/dist/handtrack.min.js"> </script>
+
+    <!-- SCRIPT APP -->
+    <script src="app.js"></script>
+</body>
+
+</html>
